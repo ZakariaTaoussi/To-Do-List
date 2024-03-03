@@ -40,7 +40,7 @@ If the index i is equal to 3, the task is excluded from the updatedTask array.*/
 
     function moveDown(index) {
         // Implementation to move task down
-        if (index > 0) {
+        if (index < task.length -1) {
             const updatedTasks = [...task];
             // Swap the elements at index and index - 1
             [updatedTasks[index], updatedTasks[index + 1]] = [updatedTasks[index + 1], updatedTasks[index]];
